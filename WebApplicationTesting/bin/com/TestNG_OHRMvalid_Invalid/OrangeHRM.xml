@@ -1,0 +1,13 @@
+<suite name="OrangeHRMApplication">
+	<test name="LoginTest">
+		<classes>
+			<class name="com.TestNG_OHRMvalid_Invalid">
+				
+			</class>
+			
+			
+		</classes>
+		
+	</test>
+	
+</suite>

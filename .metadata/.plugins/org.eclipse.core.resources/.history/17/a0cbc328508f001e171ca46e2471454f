@@ -1,0 +1,55 @@
+package com.OrangeHRMApplicationWebPages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.BaseTest.BaseTest;
+import com.Utility.Log;
+
+public class OrangeHRMLoginPage extends BaseTest{
+	
+	public OrangeHRMLoginPage()//This is Called as Constructor
+	{
+		PageFactory.initElements(driver, this);
+		
+	}
+	
+	//LoginPanel
+	//<div id="logInPanelHeading">LOGIN Panel</div>
+	//@FindBy is an annotation of POM,Used to Locate an Element
+	//1.identify the element of the WebPage
+	@FindBy(id="logInPanelHeading")
+	WebElement LoginPanel;
+	
+	//Performing the Operation on the Element of the WebPage
+	//Validation of OHRM Application Login Page
+	
+	public void ValidatingLoginPanelText()//Business Logic
+	{
+	String	expected_OrangeHRMApplicationLoginPageText="LOGINPanel";
+	Log.info("The expected text of the OHRM Application Login Page is -"+expected_OrangeHRMApplicationLoginPageText);
+		
+	String actual_OrangeHRMApplicationLoginPageText=LoginPanel.getText();
+	Log.info("The actual text of the OHRM Application Login Page is -"+actual_OrangeHRMApplicationLoginPageText);
+	
+	if(actual_OrangeHRMApplicationLoginPageText.equals(expected_OrangeHRMApplicationLoginPageText))
+	{
+		Log.info("OrangeHRMApplication LoginPageTextValidation Sucessfull-PASS");
+	}
+	else
+	{
+		Log.info("OrangeHRMApplication LoginPageTextValidation UNSucessfull-FAIL");
+	}
+	
+	}
+	
+	
+	
+	
+	
+	}
+	
+	    
+
+}

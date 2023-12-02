@@ -1,0 +1,39 @@
+package com.OrangeHRMApplicationTestCases;
+
+import org.testng.annotations.Test;
+
+import com.BaseTest.BaseTest;
+import com.OrangeHRMApplicationWebPages.OrangeHRMLoginPage;
+
+public class OrangeHRMLoginPageTest extends BaseTest{
+	
+	
+		@Test(priority =1,description="Validating OrangeHRMapplication LoginPage Text Test")
+		public void ValidatingLoginPanelTextTest()
+		{
+			OrangeHRMLoginPage loginPage=new OrangeHRMLoginPage();
+			loginPage.ValidatingLoginPanelText();
+		
+			}
+		@Test(priority = 2,description = "validatingOrangeHRMApplicationLoginPageLogoTest")
+		public void validatingOrangeHRMApplicationLoginPageLogoTest()
+		{
+			OrangeHRMLoginPage loginPage=new OrangeHRMLoginPage();
+			loginPage.validatingOrangeHRMApplicationLoginPageLogo();
+			
+		}
+		@Test(priority = 3,description = "validatingLoginFunctionalityTest")
+		public void validatingLoginFunctionalityTest()
+		{
+			OrangeHRMLoginPage loginPage=new OrangeHRMLoginPage();
+			loginPage.validatingLoginFunctionality("Renuka", "Renuka@123");
+		}
+		
+		
+	}
+	
+	
+	
+	
+
+

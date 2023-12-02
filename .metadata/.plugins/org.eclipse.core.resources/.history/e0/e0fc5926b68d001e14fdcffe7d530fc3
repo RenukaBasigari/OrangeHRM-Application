@@ -1,0 +1,24 @@
+package com.OrangeHRMApplicationWebPages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.BaseTest.BaseTest2;
+
+public class OrangeHRMLoginPage extends BaseTest2{
+	//its an Object Repository class
+	public OrangeHRMLoginPage()
+	{
+		PageFactory.initElements(driver, this);	
+	}
+	//LoginPanel Heading
+	//@FindBy is an annotation of POM,used to  Locate an Element
+	//1.identifying the element of the webpage
+	@FindBy(id="LoginPanelHeading")
+	WebElement   LoginPanel;
+	
+	
+	//
+
+}

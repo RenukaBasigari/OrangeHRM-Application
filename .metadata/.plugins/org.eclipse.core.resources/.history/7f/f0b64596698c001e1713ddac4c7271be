@@ -1,0 +1,23 @@
+<suite name="OrangeHRMApplication" parllel="tests">
+	<test name="LoginTest">
+		<classes>
+			<class name="com.TestNG_OHRMvalid_Invalid">
+				
+			</class>
+			
+			
+		</classes>
+		
+	</test>
+	
+
+
+  <test name="AddEmployeeTest">
+	<classes>
+		<class name="com.TestNG_OHRMvalid_Invalid.AddEmployeeTest"></class>
+	</classes>
+</test>
+</suite>
+
+
+	

@@ -1,0 +1,19 @@
+package com.Utility;
+
+public class Snippet {
+	public void setup()
+			{
+	
+			System.setProperty("webdriver.chrome.driver", "./newbrowser/chromedriver.exe");
+			driver=new ChromeDriver();
+	        driver.get(applicationUrlAddress);
+	        driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
+	       Log.info("Sucessfully Navigated Chromebrowser");
+			}
+			@AfterTest
+			public void teardown()
+			{
+				driver.quit();
+				Log.info("Sucessfully Navigated Closed");
+}
+

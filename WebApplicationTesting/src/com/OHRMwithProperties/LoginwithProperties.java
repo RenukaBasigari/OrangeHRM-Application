@@ -1,0 +1,170 @@
+package com.OHRMwithProperties;
+
+	import java.io.FileInputStream;
+	import java.io.FileOutputStream;
+	import java.io.IOException;
+   import java.util.Properties;
+    import java.util.concurrent.TimeUnit;
+
+	import org.apache.poi.ss.usermodel.Cell;
+	import org.apache.poi.ss.usermodel.Row;
+	import org.apache.poi.xssf.usermodel.XSSFSheet;
+	import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+	import org.openqa.selenium.By;
+    import org.openqa.selenium.WebDriver;
+   import org.openqa.selenium.WebElement;
+   import org.openqa.selenium.chrome.ChromeDriver;
+    import org.testng.annotations.AfterTest;
+    import org.testng.annotations.BeforeTest;
+   import org.testng.annotations.Test;
+
+import com.TestNG_OHRMvalid_Invalid.BaseTest2;
+
+	public class LoginwithProperties {
+		
+		
+		WebDriver driver;
+		String applicationUrlAddress= "http://127.0.0.1/orangehrm-4.2.0.1/symfony/web/index.php/auth/login";
+		FileInputStream	propertiesFile;
+		Properties	properties;
+		
+		@BeforeTest
+		public void setup()
+		{
+
+		System.setProperty("webdriver.chrome.driver", "./newbrowser/chromedriver.exe");
+		driver=new ChromeDriver();
+        driver.get(applicationUrlAddress);
+        driver.manage().timeouts().implicitlyWait(15,TimeUnit.SECONDS);
+
+	
+		}
+		
+		@Test(priority = 1)
+		public void ORMvalidinvalidlogin() throws IOException
+		{
+			
+
+			FileInputStream testDataFile = new FileInputStream("./src/com/Login_Valid_Invalid/test.xlsx");
+
+			XSSFWorkbook workbook = new XSSFWorkbook(testDataFile);
+
+			XSSFSheet testDataSheet =workbook.getSheet("Sheet1");
+
+
+			for(int rowindex=1;rowindex<=4;rowindex++)
+			{
+
+			Row testDataRow=testDataSheet.getRow(rowindex);
+
+
+			Cell testDataCell=testDataRow.getCell(0);
+
+			String userNameTestData=testDataCell.getStringCellValue();
+
+			
+			
+		FileInputStream	propertiesFile=new FileInputStream("./src/com/OHRMLoginProperties/Properties");
+		
+	Properties	properties=new Properties();
+	properties.load(propertiesFile);
+	
+	// <input name="txtUsername" id="txtUsername" type="text">
+
+			By userNameProperty=By.id(properties.getProperty("orangeHRMApplicationLoginPageUserNameProperty"));
+
+			WebElement userName=driver.findElement(userNameProperty);
+
+			userName.sendKeys(userNameTestData);
+
+
+
+			Row testDataRowpassword=testDataSheet.getRow(rowindex);
+
+
+			Cell testDataCellpassword=testDataRow.getCell(1);
+
+			String passwordTestData=testDataCellpassword.getStringCellValue();
+
+			// <input name="txtPassword" autocomplete="off" type="password">
+
+
+			By passwordProperty=By.name(properties.getProperty("orangeHRMApplicationLoginPagePasswordProperty"));
+			WebElement password=driver.findElement(passwordProperty);
+			password.sendKeys(passwordTestData);
+		
+
+			// <input type="submit"  class="button"  value="LOGIN">
+
+			By loginButtonProperty=By.className(properties.getProperty("orangeHRMApplicationLoginPageLoginButtonProperty"));
+
+			WebElement loginButton=driver.findElement(loginButtonProperty);
+			loginButton.click();
+
+
+
+
+			String expected_OrangeHRMApplicationHomePageText="Admin";
+			System.out.println(" The Expected Text of OrangeHRM Application HomePage is :- "+expected_OrangeHRMApplicationHomePageText);
+
+			try
+			{
+			// id="welcome" - Property of WelCome Admin Element
+			By welComeAdminProperty=By.id(properties.getProperty("orangeHRMApplicationHomePageWelcomeAdminProperty"));
+			WebElement welComeAdmin=driver.findElement(welComeAdminProperty);
+			welComeAdmin.click();
+
+
+
+			String actual_OrangeHRMApplicationHomePageText=welComeAdmin.getText();
+			System.out.println(" The actual Text of OrangeHRM Application HomePage is :- "+actual_OrangeHRMApplicationHomePageText);
+			   
+
+
+
+			if(actual_OrangeHRMApplicationHomePageText.contains(expected_OrangeHRMApplicationHomePageText))
+			{
+			System.out.println(" Succesfully Navigated to OrangeHRM Application HomePage - PASS");
+			Cell testDataCellResult=testDataRow.createCell(2);
+
+			testDataCellResult.setCellValue(" Succesfully Navigated to OrangeHRM Application HomePage - PASS");
+
+
+			}
+			else
+			{
+			System.out.println(" Failed to Navigat to OrangeHRM Application HomePage - FAIL");
+
+			Cell logInTestResultRowOfCell=testDataRow.createCell(2);
+			logInTestResultRowOfCell.setCellValue("Failed to Navigat to OrangeHRM Application HomePage - FAIL");
+
+			}
+
+			FileOutputStream testdataresult=new FileOutputStream("./src/com/Login_Valid_Invalid/test.xlsx");
+
+			workbook.write(testdataresult);
+
+
+			
+
+			By logOutProperty=By.linkText(properties.getProperty("orangeHRMApplicationHomePageLogOutProperty"));
+
+			WebElement logOut=driver.findElement(logOutProperty);
+			logOut.click();
+			}
+			
+			catch (Exception e)
+			{
+			// TODO: handle exception
+			}
+			}
+
+	}
+	
+	@AfterTest
+	public void teardown()
+	{
+		driver.quit();
+	}
+	}
+

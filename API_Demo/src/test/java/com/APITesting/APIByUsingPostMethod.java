@@ -1,0 +1,30 @@
+package com.APITesting;
+
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
+public class APIByUsingPostMethod {
+	
+	public void createResource()
+	{
+		//Initiate PayLoad
+	String	RequestBody="{\r\n"
+				+ "    \"name\": \"Devi\",\r\n"
+				+ "    \"Trainer\": \"LiveTech\"\r\n"
+				+ "}";
+	
+	RequestSpecification request=RestAssured.given();
+	
+	request.header("ContentType","JSON/Application");
+	request.body(RequestBody);
+	Response response=request.post();
+	int Statuscode=response.getStatusCode();
+	System.out.println("StatusCode"+Statuscode);
+    String	ResponseBody=response.getBody().asString();
+
+    System.out.println("ResponseBody"+ResponseBody);
+    	
+	}
+
+}

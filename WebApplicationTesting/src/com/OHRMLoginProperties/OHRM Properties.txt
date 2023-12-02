@@ -1,0 +1,19 @@
+#OrangeHRM Application UserName Element Property-the Locator is id
+orangeHRMApplicationLoginPageUserNameProperty=txtUsername
+
+#OrangeHRM Application Password Element Property-the Locator is name
+orangeHRMApplicationLoginPagePasswordProperty=txtPassword
+
+#OrangeHRM Application LoginButton Element Property-the Locator is classname
+orangeHRMApplicationLoginPageLoginButtonProperty=button
+
+#OrangeHRM Application HomePage WelcomeAdmin Element Property-the Locator is id
+orangeHRMApplicationHomePageWelcomeAdminProperty=welcome
+
+#OrangeHRM Application HomePage LogOut Element Property-the Locator is linkText
+orangeHRMApplicationHomePageLogOutProperty=Logout
+
+
+
+
+

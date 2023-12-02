@@ -1,0 +1,69 @@
+2023-11-30 12:46:10,409 - Log -INFO - The expected text of the OHRM Application Login Page is -LOGINPanel
+2023-11-30 12:47:00,784 - Log -INFO - The expected text of the OHRM Application Login Page is -LOGINPanel
+2023-11-30 12:49:51,385 - Log -INFO - Sucessfully Launched Chromebrowser
+2023-11-30 12:49:51,937 - Log -INFO - Sucessfully Navigated to OHRM Application
+2023-11-30 12:49:52,204 - Log -INFO - The expected text of the OHRM Application Login Page is -LOGINPanel
+2023-11-30 12:49:52,284 - Log -INFO - The actual text of the OHRM Application Login Page is -LOGIN Panel
+2023-11-30 12:49:52,291 - Log -INFO - OrangeHRMApplication LoginPageTextValidation UNSucessfull-FAIL
+2023-11-30 12:49:52,689 - Log -INFO - ChromeBrowser along with OrangeHRM Application Closed Sucessfully 
+2023-11-30 12:50:34,549 - Log -INFO - Sucessfully Launched Chromebrowser
+2023-11-30 12:50:35,060 - Log -INFO - Sucessfully Navigated to OHRM Application
+2023-11-30 12:50:35,326 - Log -INFO - The expected text of the OHRM Application Login Page is -LOGINPanel
+2023-11-30 12:50:35,381 - Log -INFO - The actual text of the OHRM Application Login Page is -LOGIN Panel
+2023-11-30 12:50:35,388 - Log -INFO - OrangeHRMApplication LoginPageTextValidation UNSucessfull-FAIL
+2023-11-30 12:50:35,660 - Log -INFO - ChromeBrowser along with OrangeHRM Application Closed Sucessfully 
+2023-11-30 13:17:25,403 - Log -INFO - Sucessfully Launched Chromebrowser
+2023-11-30 13:17:25,884 - Log -INFO - Sucessfully Navigated to OHRM Application
+2023-11-30 13:17:26,153 - Log -INFO - The expected text of the OHRM Application Login Page is -LOGINPanel
+2023-11-30 13:17:26,224 - Log -INFO - The actual text of the OHRM Application Login Page is -LOGIN Panel
+2023-11-30 13:17:26,232 - Log -INFO - OrangeHRMApplication LoginPageTextValidation UNSucessfull-FAIL
+2023-11-30 13:17:26,625 - Log -INFO - ChromeBrowser along with OrangeHRM Application Closed Sucessfully 
+2023-11-30 13:18:34,355 - Log -INFO - Sucessfully Launched Chromebrowser
+2023-11-30 13:18:34,939 - Log -INFO - Sucessfully Navigated to OHRM Application
+2023-11-30 13:18:35,212 - Log -INFO - The expected text of the OHRM Application Login Page is -LOGINPanel
+2023-11-30 13:18:35,270 - Log -INFO - The actual text of the OHRM Application Login Page is -LOGIN Panel
+2023-11-30 13:18:35,277 - Log -INFO - OrangeHRMApplication LoginPageTextValidation UNSucessfull-FAIL
+2023-11-30 13:18:35,390 - Log -INFO - OrangeHRM Application Login WebPage Contains Logo-PASS
+2023-11-30 13:18:35,653 - Log -INFO - ChromeBrowser along with OrangeHRM Application Closed Sucessfully 
+2023-12-01 12:06:49,042 - Log -INFO - Sucessfully Launched Chromebrowser
+2023-12-01 12:06:49,605 - Log -INFO - Sucessfully Navigated to OHRM Application
+2023-12-01 12:06:49,875 - Log -INFO - The expected text of the OHRM Application Login Page is -LOGINPanel
+2023-12-01 12:06:49,947 - Log -INFO - The actual text of the OHRM Application Login Page is -LOGIN Panel
+2023-12-01 12:06:49,963 - Log -INFO - OrangeHRMApplication LoginPageTextValidation UNSucessfull-FAIL
+2023-12-01 12:06:50,090 - Log -INFO - OrangeHRM Application Login WebPage Contains Logo-PASS
+2023-12-01 12:06:50,431 - Log -INFO - ChromeBrowser along with OrangeHRM Application Closed Sucessfully 
+2023-12-01 12:08:01,163 - Log -INFO - Sucessfully Launched Chromebrowser
+2023-12-01 12:08:01,734 - Log -INFO - Sucessfully Navigated to OHRM Application
+2023-12-01 12:08:02,014 - Log -INFO - The expected text of the OHRM Application Login Page is -LOGINPanel
+2023-12-01 12:08:02,078 - Log -INFO - The actual text of the OHRM Application Login Page is -LOGIN Panel
+2023-12-01 12:08:02,084 - Log -INFO - OrangeHRMApplication LoginPageTextValidation UNSucessfull-FAIL
+2023-12-01 12:08:02,206 - Log -INFO - OrangeHRM Application Login WebPage Contains Logo-PASS
+2023-12-01 12:08:02,459 - Log -INFO - ChromeBrowser along with OrangeHRM Application Closed Sucessfully 
+2023-12-01 12:09:12,313 - Log -INFO - Sucessfully Launched Chromebrowser
+2023-12-01 12:09:13,018 - Log -INFO - Sucessfully Navigated to OHRM Application
+2023-12-01 12:09:13,286 - Log -INFO - The expected text of the OHRM Application Login Page is -LOGINPanel
+2023-12-01 12:09:13,349 - Log -INFO - The actual text of the OHRM Application Login Page is -LOGIN Panel
+2023-12-01 12:09:13,360 - Log -INFO - OrangeHRMApplication LoginPageTextValidation UNSucessfull-FAIL
+2023-12-01 12:09:13,494 - Log -INFO - OrangeHRM Application Login WebPage Contains Logo-PASS
+2023-12-01 12:09:24,244 - Log -INFO - ChromeBrowser along with OrangeHRM Application Closed Sucessfully 
+2023-12-01 12:11:12,770 - Log -INFO - Sucessfully Launched Chromebrowser
+2023-12-01 12:11:13,477 - Log -INFO - Sucessfully Navigated to OHRM Application
+2023-12-01 12:11:13,754 - Log -INFO - The expected text of the OHRM Application Login Page is -LOGINPanel
+2023-12-01 12:11:13,817 - Log -INFO - The actual text of the OHRM Application Login Page is -LOGIN Panel
+2023-12-01 12:11:13,823 - Log -INFO - OrangeHRMApplication LoginPageTextValidation UNSucessfull-FAIL
+2023-12-01 12:11:13,936 - Log -INFO - OrangeHRM Application Login WebPage Contains Logo-PASS
+2023-12-01 12:11:23,488 - Log -INFO - ChromeBrowser along with OrangeHRM Application Closed Sucessfully 
+2023-12-01 12:13:35,484 - Log -INFO - Sucessfully Launched Chromebrowser
+2023-12-01 12:13:35,988 - Log -INFO - Sucessfully Navigated to OHRM Application
+2023-12-01 12:13:36,251 - Log -INFO - The expected text of the OHRM Application Login Page is -LOGIN Panel
+2023-12-01 12:13:36,316 - Log -INFO - The actual text of the OHRM Application Login Page is -LOGIN Panel
+2023-12-01 12:13:36,322 - Log -INFO - OrangeHRMApplication LoginPageTextValidation Sucessfull-PASS
+2023-12-01 12:13:36,448 - Log -INFO - OrangeHRM Application Login WebPage Contains Logo-PASS
+2023-12-01 12:13:39,086 - Log -INFO - ChromeBrowser along with OrangeHRM Application Closed Sucessfully 
+2023-12-01 18:38:18,161 - Log -INFO - Sucessfully Launched Chromebrowser
+2023-12-01 18:38:18,592 - Log -INFO - Sucessfully Navigated to OHRM Application
+2023-12-01 18:38:18,819 - Log -INFO - The expected text of the OHRM Application Login Page is -LOGIN Panel
+2023-12-01 18:38:18,880 - Log -INFO - The actual text of the OHRM Application Login Page is -LOGIN Panel
+2023-12-01 18:38:18,886 - Log -INFO - OrangeHRMApplication LoginPageTextValidation Sucessfull-PASS
+2023-12-01 18:38:18,984 - Log -INFO - OrangeHRM Application Login WebPage Contains Logo-PASS
+2023-12-01 18:38:24,365 - Log -INFO - ChromeBrowser along with OrangeHRM Application Closed Sucessfully 

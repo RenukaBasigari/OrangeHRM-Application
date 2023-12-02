@@ -1,0 +1,25 @@
+package com.OrangeHRMApplicationTestCases;
+
+import org.testng.annotations.Test;
+
+import com.BaseTest.BaseTest;
+import com.OrangeHRMApplicationWebPages.OrangeHRMLoginPage;
+
+public class OrangeHRMLoginPageTest extends BaseTest{
+	
+	
+		@Test(priority =1,description="Validating OrangeHRMapplication LoginPage Text Test")
+		public void ValidatingLoginPanelTextTest()
+		{
+			OrangeHRMLoginPage loginPage=new OrangeHRMLoginPage();
+			loginPage.ValidatingLoginPanelText();
+			
+		}
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+	
+
+}
